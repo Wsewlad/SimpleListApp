@@ -7,14 +7,14 @@
 
 import Foundation
 
-public struct ModelStorable: Codable {
-    public var id: Int
-    public var value: String
-    public var value2: [String]
+struct ModelStorable: Codable {
+    var id: Int
+    var value: String
+    var value2: [String]
 }
 
 // MARK: - CodingKey
-public extension ModelStorable {
+extension ModelStorable {
     enum CodingKeys: String, CodingKey {
         case id, value
         case value2 = "value_2"
@@ -22,7 +22,7 @@ public extension ModelStorable {
 }
 
 // MARK: - Decoding
-public extension ModelStorable {
+extension ModelStorable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         id = container.decodeSafely(.id) ?? 0

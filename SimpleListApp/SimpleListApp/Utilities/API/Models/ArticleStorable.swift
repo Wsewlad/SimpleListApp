@@ -7,23 +7,24 @@
 
 import Foundation
 
-public struct ArticleStorable: Codable {
-    public var author: String
-    public var title: String
-    public var description: String
-    public var urlToImage: String
-    public var publishedAt: String
+struct ArticleStorable: Codable {
+    var author: String
+    var title: String
+    var description: String
+    var urlToImage: String
+    var publishedAt: String
+    var source: SourceStorable
 }
 
 // MARK: - CodingKey
-public extension ArticleStorable {
+extension ArticleStorable {
     enum CodingKeys: String, CodingKey {
-        case author, title, description, urlToImage, publishedAt
+        case author, title, description, urlToImage, publishedAt, source
     }
 }
 
 // MARK: - Decoding
-public extension ArticleStorable {
+extension ArticleStorable {
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         
@@ -32,6 +33,7 @@ public extension ArticleStorable {
         description = container.decodeSafely(.description) ?? ""
         urlToImage = container.decodeSafely(.urlToImage) ?? ""
         publishedAt = container.decodeSafely(.publishedAt) ?? ""
+        source = try container.decode(.source)
     }
     
     func encode(to encoder: Encoder) throws {
@@ -42,5 +44,6 @@ public extension ArticleStorable {
         try container.encode(description, forKey: .description)
         try container.encode(urlToImage, forKey: .urlToImage)
         try container.encode(publishedAt, forKey: .publishedAt)
+        try container.encode(source, forKey: .source)
     }
 }

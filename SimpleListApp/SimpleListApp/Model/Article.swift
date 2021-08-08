@@ -17,6 +17,8 @@ struct Article {
     var title: String
     var description: String
     var urlToImage: URL?
+    var source: String
+    var publishedAtDate: Date
 }
 
 //MARK: - Equatable
@@ -38,10 +40,12 @@ extension Article {
     static func fakeItem() -> Article {
         .init(
             id: .init(value: "fake"),
-            author: "Author",
-            title: "Title",
-            description: "Description",
-            urlToImage: nil
+            author: "BBC News",
+            title: "Capitol riot: Off-duty Seattle police officers fired over assault",
+            description: "The officers stood by as Donald Trump's supporters stormed the government building, an inquiry says.",
+            urlToImage: URL(string: "https://ichef.bbci.co.uk/news/1024/branded_news/B228/production/_119080654_gettyimages-1230455457-594x594.jpg"),
+            source: "BBC",
+            publishedAtDate: Date()
         )
     }
 }
@@ -50,11 +54,13 @@ extension Article {
 extension ArticleStorable {
     var asArticle: Article {
         .init(
-            id: .init(value: author + publishedAt),
+            id: .init(value: title + publishedAt),
             author: author,
             title: title,
             description: description,
-            urlToImage: URL(string: urlToImage)
+            urlToImage: URL(string: urlToImage),
+            source: source.name,
+            publishedAtDate: DateFormatter().date(from: publishedAt) ?? Date()
         )
     }
 }

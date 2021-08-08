@@ -10,7 +10,6 @@ import Combine
 import SwiftUI
 import Collections
 
-
 class NewsListViewModel: ObservableObject {
     
     @Published var articles = OrderedSet<Article>()
@@ -21,11 +20,12 @@ class NewsListViewModel: ObservableObject {
     let perPage = 5
     
     private var cancellable: AnyCancellable? = nil
-    
+}
+
+//MARK: - Fetch Articles
+extension NewsListViewModel {
     func fetchArticles(at page: Int? = nil) {
         guard cancellable == nil else { return }
-        
-        //self.state = .loading
         
         if let cPage = page {
             articles = OrderedSet(Array(articles.elements.prefix(perPage)))
@@ -39,13 +39,13 @@ class NewsListViewModel: ObservableObject {
             .map { $0.map(\.asArticle) }
             .catch { _ in Just(self.articles.elements) }
             .sink { articles in
+                
                 self.currentPage += 1
                 
                 DispatchQueue.main.async {
                     for article in articles {
                         self.articles.append(article)
                     }
-                    
                     self.state = .none
                 }
                 
@@ -58,6 +58,7 @@ class NewsListViewModel: ObservableObject {
     }
 }
 
+//MARK: - State
 extension NewsListViewModel {
     enum State {
         case loading, none

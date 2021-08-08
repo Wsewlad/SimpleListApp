@@ -40,6 +40,10 @@
 		82CB679326BFF879001ACC57 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 82CB679226BFF879001ACC57 /* OrderedCollections */; };
 		82CB679526BFF879001ACC57 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 82CB679426BFF879001ACC57 /* Collections */; };
 		82CB679726BFFC7A001ACC57 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB679626BFFC79001ACC57 /* View.swift */; };
+		82CB679926C0032B001ACC57 /* ArticleDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB679826C0032B001ACC57 /* ArticleDetails.swift */; };
+		82CB679B26C01E52001ACC57 /* SourceStorable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB679A26C01E52001ACC57 /* SourceStorable.swift */; };
+		82CB679D26C02129001ACC57 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB679C26C02129001ACC57 /* DateFormatter.swift */; };
+		82CB679F26C021C4001ACC57 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB679E26C021C4001ACC57 /* Date.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +78,10 @@
 		82CB678A26BF0E87001ACC57 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		82CB678C26BF1BEB001ACC57 /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
 		82CB679626BFFC79001ACC57 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		82CB679826C0032B001ACC57 /* ArticleDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleDetails.swift; sourceTree = "<group>"; };
+		82CB679A26C01E52001ACC57 /* SourceStorable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceStorable.swift; sourceTree = "<group>"; };
+		82CB679C26C02129001ACC57 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		82CB679E26C021C4001ACC57 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +121,6 @@
 				82CB678626BEF912001ACC57 /* Common */,
 				82CB673126BE969B001ACC57 /* SimpleListAppApp.swift */,
 				82CB674526BEA2E3001ACC57 /* View */,
-				82CB677E26BEF060001ACC57 /* ViewElements */,
 				82CB674726BEA2F4001ACC57 /* ViewModel */,
 				82CB674626BEA2EB001ACC57 /* Model */,
 				82CB674826BEA335001ACC57 /* Utilities */,
@@ -219,6 +226,7 @@
 			children = (
 				82CB676E26BEB85D001ACC57 /* ModelStorable.swift */,
 				82CB677A26BEDAAF001ACC57 /* ArticleStorable.swift */,
+				82CB679A26C01E52001ACC57 /* SourceStorable.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -227,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				82CB673326BE969B001ACC57 /* MainListView.swift */,
+				82CB677F26BEF0C2001ACC57 /* ArticleRowView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -234,16 +243,9 @@
 		82CB677D26BEF045001ACC57 /* Details */ = {
 			isa = PBXGroup;
 			children = (
-				82CB677F26BEF0C2001ACC57 /* ArticleRowView.swift */,
+				82CB679826C0032B001ACC57 /* ArticleDetails.swift */,
 			);
 			path = Details;
-			sourceTree = "<group>";
-		};
-		82CB677E26BEF060001ACC57 /* ViewElements */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewElements;
 			sourceTree = "<group>";
 		};
 		82CB678626BEF912001ACC57 /* Common */ = {
@@ -260,6 +262,8 @@
 				82CB678826BEF940001ACC57 /* Image.swift */,
 				82CB678A26BF0E87001ACC57 /* Color.swift */,
 				82CB679626BFFC79001ACC57 /* View.swift */,
+				82CB679C26C02129001ACC57 /* DateFormatter.swift */,
+				82CB679E26C021C4001ACC57 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -346,6 +350,7 @@
 			files = (
 				82CB677526BED4AC001ACC57 /* Publisher+UnwrapDecoding.swift in Sources */,
 				82CB678926BEF940001ACC57 /* Image.swift in Sources */,
+				82CB679B26C01E52001ACC57 /* SourceStorable.swift in Sources */,
 				82CB676826BEB79E001ACC57 /* JSONDecoder.swift in Sources */,
 				82CB678D26BF1BEB001ACC57 /* PullToRefresh.swift in Sources */,
 				82CB676F26BEB85D001ACC57 /* ModelStorable.swift in Sources */,
@@ -357,6 +362,7 @@
 				82CB676426BEB704001ACC57 /* Data.swift in Sources */,
 				82CB675A26BEB59C001ACC57 /* BlankError.swift in Sources */,
 				82CB677726BED7EE001ACC57 /* NewsListViewModel.swift in Sources */,
+				82CB679926C0032B001ACC57 /* ArticleDetails.swift in Sources */,
 				82CB673B26BE96A1001ACC57 /* Persistence.swift in Sources */,
 				82CB679726BFFC7A001ACC57 /* View.swift in Sources */,
 				82CB677B26BEDAAF001ACC57 /* ArticleStorable.swift in Sources */,
@@ -366,8 +372,10 @@
 				82CB676C26BEB7E3001ACC57 /* URLSession.swift in Sources */,
 				82CB678B26BF0E87001ACC57 /* Color.swift in Sources */,
 				82CB676A26BEB7B5001ACC57 /* URLRequest.swift in Sources */,
+				82CB679D26C02129001ACC57 /* DateFormatter.swift in Sources */,
 				82CB673226BE969B001ACC57 /* SimpleListAppApp.swift in Sources */,
 				82CB675C26BEB5B6001ACC57 /* CustomError.swift in Sources */,
+				82CB679F26C021C4001ACC57 /* Date.swift in Sources */,
 				82CB677126BEB94B001ACC57 /* BaseAPI.swift in Sources */,
 				82CB676626BEB77F001ACC57 /* Dictionary+Request.swift in Sources */,
 				82CB675E26BEB5E2001ACC57 /* ServerError.swift in Sources */,

@@ -23,17 +23,145 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "6242F204-D62F-4DBC-9814-9B41B6099517"
+            uuid = "18F90C80-32F2-42E6-8236-71C45974248D"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SimpleListApp/ViewModel/NewsListViewModel.swift"
+            filePath = "SimpleListApp/View/Main/MainListView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "fetchArticles(at:)"
-            landmarkType = "7">
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "isDetailsActive"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "18F90C80-32F2-42E6-8236-71C45974248D - 718d50931ee556c6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleListApp.MainListView.isDetailsActive.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "SimpleListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladyslavfil/iOS_Developer/SimpleListApp/SimpleListApp/SimpleListApp/View/Main/MainListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "205">
+               </Location>
+               <Location
+                  uuid = "18F90C80-32F2-42E6-8236-71C45974248D - 658661da098053c7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Swift.Bool in SimpleListApp.MainListView.isDetailsActive.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "SimpleListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladyslavfil/iOS_Developer/SimpleListApp/SimpleListApp/SimpleListApp/View/Main/MainListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "251">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F8FE434-36F1-4752-ABEA-A7A3018D95E2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/View/Main/MainListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "isDetailsActive"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3F8FE434-36F1-4752-ABEA-A7A3018D95E2 - 718d50931ee556e5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleListApp.MainListView.isDetailsActive.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "SimpleListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladyslavfil/iOS_Developer/SimpleListApp/SimpleListApp/SimpleListApp/View/Main/MainListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "82"
+                  endingLineNumber = "82"
+                  offsetFromSymbolStart = "340">
+               </Location>
+               <Location
+                  uuid = "3F8FE434-36F1-4752-ABEA-A7A3018D95E2 - 4d4129523f28e24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Bool) -&gt; () in SimpleListApp.MainListView.isDetailsActive.getter : SwiftUI.Binding&lt;Swift.Bool&gt;"
+                  moduleName = "SimpleListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladyslavfil/iOS_Developer/SimpleListApp/SimpleListApp/SimpleListApp/View/Main/MainListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "83"
+                  endingLineNumber = "83"
+                  offsetFromSymbolStart = "249">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "891B0671-6F08-4624-8E21-C887F39BFFF4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/View/Main/MainListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "isDetailsActive"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "58A23A89-828A-4E62-A56F-C8F8FE51E890"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/View/Main/MainListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F4C4BBE6-02E1-4F39-96F6-9D71E0A3B159"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/Utilities/API/BaseAPI.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "validate(_:_:)"
+            landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
