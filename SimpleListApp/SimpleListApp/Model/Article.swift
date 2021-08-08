@@ -19,9 +19,18 @@ struct Article {
     var urlToImage: URL?
 }
 
+//MARK: - Equatable
 extension Article: Equatable {
     static func == (lhs: Article, rhs: Article) -> Bool {
         return lhs.id == rhs.id
+    }
+}
+
+// MARK: - Hashable
+extension Article: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+        hasher.combine(title)
     }
 }
 

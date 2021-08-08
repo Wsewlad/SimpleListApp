@@ -37,6 +37,9 @@
 		82CB678B26BF0E87001ACC57 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB678A26BF0E87001ACC57 /* Color.swift */; };
 		82CB678D26BF1BEB001ACC57 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB678C26BF1BEB001ACC57 /* PullToRefresh.swift */; };
 		82CB679026BF1C98001ACC57 /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 82CB678F26BF1C98001ACC57 /* Introspect */; };
+		82CB679326BFF879001ACC57 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 82CB679226BFF879001ACC57 /* OrderedCollections */; };
+		82CB679526BFF879001ACC57 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 82CB679426BFF879001ACC57 /* Collections */; };
+		82CB679726BFFC7A001ACC57 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB679626BFFC79001ACC57 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,7 @@
 		82CB678826BEF940001ACC57 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		82CB678A26BF0E87001ACC57 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		82CB678C26BF1BEB001ACC57 /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
+		82CB679626BFFC79001ACC57 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			files = (
 				82CB678326BEF417001ACC57 /* SDWebImageSwiftUI in Frameworks */,
 				82CB679026BF1C98001ACC57 /* Introspect in Frameworks */,
+				82CB679526BFF879001ACC57 /* Collections in Frameworks */,
+				82CB679326BFF879001ACC57 /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +259,7 @@
 			children = (
 				82CB678826BEF940001ACC57 /* Image.swift */,
 				82CB678A26BF0E87001ACC57 /* Color.swift */,
+				82CB679626BFFC79001ACC57 /* View.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -276,6 +283,8 @@
 			packageProductDependencies = (
 				82CB678226BEF417001ACC57 /* SDWebImageSwiftUI */,
 				82CB678F26BF1C98001ACC57 /* Introspect */,
+				82CB679226BFF879001ACC57 /* OrderedCollections */,
+				82CB679426BFF879001ACC57 /* Collections */,
 			);
 			productName = SimpleListApp;
 			productReference = 82CB672E26BE969B001ACC57 /* SimpleListApp.app */;
@@ -307,6 +316,7 @@
 			packageReferences = (
 				82CB678126BEF417001ACC57 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 				82CB678E26BF1C98001ACC57 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+				82CB679126BFF878001ACC57 /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = 82CB672F26BE969B001ACC57 /* Products */;
 			projectDirPath = "";
@@ -348,6 +358,7 @@
 				82CB675A26BEB59C001ACC57 /* BlankError.swift in Sources */,
 				82CB677726BED7EE001ACC57 /* NewsListViewModel.swift in Sources */,
 				82CB673B26BE96A1001ACC57 /* Persistence.swift in Sources */,
+				82CB679726BFFC7A001ACC57 /* View.swift in Sources */,
 				82CB677B26BEDAAF001ACC57 /* ArticleStorable.swift in Sources */,
 				82CB673E26BE96A1001ACC57 /* SimpleListApp.xcdatamodeld in Sources */,
 				82CB673426BE969B001ACC57 /* MainListView.swift in Sources */,
@@ -566,6 +577,14 @@
 				minimumVersion = 0.1.3;
 			};
 		};
+		82CB679126BFF878001ACC57 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -578,6 +597,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 82CB678E26BF1C98001ACC57 /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
 			productName = Introspect;
+		};
+		82CB679226BFF879001ACC57 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82CB679126BFF878001ACC57 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
+		};
+		82CB679426BFF879001ACC57 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82CB679126BFF878001ACC57 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
 		};
 /* End XCSwiftPackageProductDependency section */
 
