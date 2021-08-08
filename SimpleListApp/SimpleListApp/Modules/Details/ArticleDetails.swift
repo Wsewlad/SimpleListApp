@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ArticleDetails: View {
-    var article: Article
+    var articleId: Article.Id
     
+    @EnvironmentObject var store: AppStore
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
@@ -61,10 +62,17 @@ struct ArticleDetails: View {
     }
 }
 
+//MARK: - Computed Properties
+private extension ArticleDetails {
+    var article: Article {
+        store.state.newsStorage.articleById[articleId] ?? .fakeItem()
+    }
+}
+
 struct ArticleDetails_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            ArticleDetails(article: .fakeItem())
+            ArticleDetails(articleId: .init(value: "1"))
         }
     }
 }

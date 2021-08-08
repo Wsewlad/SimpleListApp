@@ -16,24 +16,27 @@ struct MainListView: View {
 //        animation: .default)
     
 //    private var items: FetchedResults<Item>
+    @EnvironmentObject var store: AppStore
     
-    @ObservedObject var viewModel = NewsListViewModel()
     @State private var isPullToRefreshIndicatorShowing = false
-    @State private var articleToOpen: Article? = nil
+    @State private var articleToOpen: Article.Id? = nil
     
     var body: some View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(viewModel.articles.elements, id: \.id) { article in
+                    ForEach(store.state.newsForm.articles.elements, id: \.self) { articleId in
+                        
+                        let article: Article = store.state.newsStorage.articleById[articleId] ?? .fakeItem()
+    
                         ZStack {
                             Color.white.padding(-1)
                             
-                            Button(action: { articleToOpen = article }) {
+                            Button(action: { articleToOpen = articleId }) {
                                 ArticleRowView(article: article)
                                     .onAppear {
-                                        if article == viewModel.articles.elements.last && !viewModel.articlesListFull {
-                                            viewModel.fetchArticles()
+                                        if articleId == store.state.newsForm .articles.elements.last && !store.state.newsForm.articlesListFull {
+                                            store.dispatch(.loadArticles())
                                         }
                                     }
                             }
@@ -43,7 +46,7 @@ struct MainListView: View {
                         .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                     }
                     
-                    if viewModel.state == .loading {
+                    if store.state.newsFlow == .loading {
                         ZStack {
                             Color.white.padding(-1)
                             
@@ -58,18 +61,18 @@ struct MainListView: View {
                 .navigationTitle("Articles")
                 .pullToRefresh(isShowing: $isPullToRefreshIndicatorShowing) {
                     DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        viewModel.fetchArticles(at: 1)
+                        store.dispatch(.loadArticles(at: 1))
                         self.isPullToRefreshIndicatorShowing = false
                     }
                 }
                 .onAppear {
-                    if !viewModel.articlesListFull {
-                        viewModel.fetchArticles()
+                    if !store.state.newsForm.articlesListFull {
+                        store.dispatch(.loadArticles())
                     }
                 }
                 
                 NavigationLink(
-                    destination: ArticleDetails(article: articleToOpen ?? .fakeItem()),
+                    destination: ArticleDetails(articleId: articleToOpen ?? Article.fakeItem().id),
                     isActive: isDetailsActive
                 ) {
                     EmptyView()
@@ -92,13 +95,6 @@ private extension MainListView {
         )
     }
 }
-
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
