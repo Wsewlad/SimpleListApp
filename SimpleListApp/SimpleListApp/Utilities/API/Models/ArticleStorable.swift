@@ -14,12 +14,13 @@ struct ArticleStorable: Codable {
     var urlToImage: String
     var publishedAt: String
     var source: SourceStorable
+    var url: String
 }
 
 // MARK: - CodingKey
 extension ArticleStorable {
     enum CodingKeys: String, CodingKey {
-        case author, title, description, urlToImage, publishedAt, source
+        case author, title, description, urlToImage, publishedAt, source, url
     }
 }
 
@@ -34,6 +35,7 @@ extension ArticleStorable {
         urlToImage = container.decodeSafely(.urlToImage) ?? ""
         publishedAt = container.decodeSafely(.publishedAt) ?? ""
         source = try container.decode(.source)
+        url = container.decodeSafely(.url) ?? ""
     }
     
     func encode(to encoder: Encoder) throws {
@@ -45,5 +47,6 @@ extension ArticleStorable {
         try container.encode(urlToImage, forKey: .urlToImage)
         try container.encode(publishedAt, forKey: .publishedAt)
         try container.encode(source, forKey: .source)
+        try container.encode(url, forKey: .url)
     }
 }

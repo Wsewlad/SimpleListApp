@@ -52,6 +52,7 @@
 		82CB67B326C068A2001ACC57 /* NewsStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB67B226C068A2001ACC57 /* NewsStorage.swift */; };
 		82CB67B526C069E2001ACC57 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB67B426C069E2001ACC57 /* Middleware.swift */; };
 		82CB67B726C06A97001ACC57 /* NewsMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB67B626C06A97001ACC57 /* NewsMiddleware.swift */; };
+		82CB67BB26C0EF55001ACC57 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB67BA26C0EF55001ACC57 /* SafariView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		82CB67B226C068A2001ACC57 /* NewsStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsStorage.swift; sourceTree = "<group>"; };
 		82CB67B426C069E2001ACC57 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		82CB67B626C06A97001ACC57 /* NewsMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMiddleware.swift; sourceTree = "<group>"; };
+		82CB67BA26C0EF55001ACC57 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				82CB674926BEA39B001ACC57 /* CoreData */,
 				82CB678426BEF597001ACC57 /* WebImage.swift */,
 				82CB678C26BF1BEB001ACC57 /* PullToRefresh.swift */,
+				82CB67BA26C0EF55001ACC57 /* SafariView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 				82CB677526BED4AC001ACC57 /* Publisher+UnwrapDecoding.swift in Sources */,
 				82CB678926BEF940001ACC57 /* Image.swift in Sources */,
 				82CB679B26C01E52001ACC57 /* SourceStorable.swift in Sources */,
+				82CB67BB26C0EF55001ACC57 /* SafariView.swift in Sources */,
 				82CB676826BEB79E001ACC57 /* JSONDecoder.swift in Sources */,
 				82CB678D26BF1BEB001ACC57 /* PullToRefresh.swift in Sources */,
 				82CB676F26BEB85D001ACC57 /* ModelStorable.swift in Sources */,

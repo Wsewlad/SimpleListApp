@@ -19,6 +19,7 @@ struct Article {
     var urlToImage: URL?
     var source: String
     var publishedAtDate: Date
+    var url: URL?
 }
 
 //MARK: - Equatable
@@ -45,7 +46,8 @@ extension Article {
             description: "The officers stood by as Donald Trump's supporters stormed the government building, an inquiry says.",
             urlToImage: URL(string: "https://ichef.bbci.co.uk/news/1024/branded_news/B228/production/_119080654_gettyimages-1230455457-594x594.jpg"),
             source: "BBC",
-            publishedAtDate: Date()
+            publishedAtDate: Date(),
+            url: nil
         )
     }
 }
@@ -60,7 +62,8 @@ extension ArticleStorable {
             description: description,
             urlToImage: URL(string: urlToImage),
             source: source.name,
-            publishedAtDate: DateFormatter().date(from: publishedAt) ?? Date()
+            publishedAtDate: DateFormatter().date(from: publishedAt) ?? Date(),
+            url: URL(string: url)
         )
     }
 }

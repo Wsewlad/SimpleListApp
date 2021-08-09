@@ -13,6 +13,8 @@ struct ArticleDetails: View {
     @EnvironmentObject var store: AppStore
     @Environment(\.presentationMode) var presentationMode
     
+    @State private var isLinkPresented: Bool = false
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 16) {
@@ -33,6 +35,20 @@ struct ArticleDetails: View {
                     .font(.body)
                     .fixedSize(horizontal: false, vertical: true)
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    .if(article.url != nil) {
+                        $0.sheet(isPresented: $isLinkPresented) {
+                            SafariView(url: article.url!)
+                        }
+                    }
+                
+                if let _ = article.url {
+                    Button(action: { isLinkPresented = true } ) {
+                        HStack {
+                            Text("Read the full article")
+                            Image(systemName: "link")
+                        }
+                    }
+                }
                 
                 Divider()
                 

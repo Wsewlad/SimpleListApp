@@ -14,7 +14,7 @@ enum NewsAPIClient {
         let queryDict = [
             URLParameter.page.rawValue: "\(page)",
             URLParameter.pageSize.rawValue: "\(pageSize)",
-            URLParameter.country.rawValue: "ua",
+            URLParameter.country.rawValue: "us",
             URLParameter.apiKey.rawValue: kApiKey
         ]
         
