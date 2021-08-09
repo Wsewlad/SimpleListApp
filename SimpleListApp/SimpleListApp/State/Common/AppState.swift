@@ -10,11 +10,13 @@ import Foundation
 struct AppState {
     var newsForm = NewsForm()
     var newsFlow = NewsFlow()
+    var cashedNewsFlow = CashedNewsFlow()
     var newsStorage = NewsStorage()
     
     mutating func reduce(action: AppAction) {
         newsForm.reduce(action: action)
         newsFlow.reduce(action: action)
+        cashedNewsFlow.reduce(action: action)
         newsStorage.reduce(action: action)
     }
 }

@@ -67,6 +67,7 @@ struct MainListView: View {
                 }
                 .onAppear {
                     if !store.state.newsForm.articlesListFull {
+                        store.dispatch(.loadCashedArticles)
                         store.dispatch(.loadArticles())
                     }
                 }
@@ -98,6 +99,6 @@ private extension MainListView {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainListView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        MainListView()
     }
 }

@@ -10,9 +10,18 @@ import Foundation
 struct NewsStorage {
     var articleById: [Article.Id: Article] = [:]
     
+    let persistenceController = PersistenceController.shared
+    
     mutating func reduce(action: AppAction) {
         switch action {
         case .didLoadArticles(let items):
+            for item in items {
+                articleById[item.id] = item
+                
+                item.saveAsCDArticle(context: persistenceController.container.viewContext)
+            }
+            
+        case .didLoadCashedArticles(let items):
             for item in items {
                 articleById[item.id] = item
             }

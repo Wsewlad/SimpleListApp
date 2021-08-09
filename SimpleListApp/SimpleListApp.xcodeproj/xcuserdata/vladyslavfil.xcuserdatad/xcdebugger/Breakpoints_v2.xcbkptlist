@@ -158,8 +158,8 @@
             filePath = "SimpleListApp/State/NewsStorage.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
             landmarkName = "reduce(action:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,8 +222,8 @@
             filePath = "SimpleListApp/State/NewsStorage.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
             landmarkName = "reduce(action:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -242,6 +242,246 @@
             endingLineNumber = "22"
             landmarkName = "reduce(action:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "561345BB-A0CC-4140-96F1-546D3475AC77"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/Modules/Main/State/NewsForm.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "reduce(action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61210DA8-EAB5-4116-8060-7D32CEC9D76B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/Modules/Main/State/NewsFlow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "reduce(action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4D531E01-E755-4080-B941-1B490F5E8D98"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/Modules/Main/State/NewsForm.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "reduce(action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6B05EAAD-3FCC-4C02-A669-579136AF14AA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/Modules/Main/View/MainListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C26067B-BE39-40D0-9848-9B3B9DA554D8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/Modules/Main/State/NewsForm.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "reduce(action:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DBA0330A-7541-4C10-A9D0-EC5BF3A15D56"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/Modules/Main/View/MainListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F26DBBD3-136C-4871-9EBE-F68F55D761B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/Modules/Main/NewsMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "F26DBBD3-136C-4871-9EBE-F68F55D761B2 - 5134962c8daaa64e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt; in variable initialization expression of SimpleListApp.newsMiddleware : (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt;"
+                  moduleName = "SimpleListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladyslavfil/iOS_Developer/SimpleListApp/SimpleListApp/SimpleListApp/Modules/Main/NewsMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "1580">
+               </Location>
+               <Location
+                  uuid = "F26DBBD3-136C-4871-9EBE-F68F55D761B2 - ddb793386918d57e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Array&lt;SimpleListApp.ArticleStorable&gt;) -&gt; SimpleListApp.AppAction in closure #1 (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt; in variable initialization expression of SimpleListApp.newsMiddleware : (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt;"
+                  moduleName = "SimpleListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladyslavfil/iOS_Developer/SimpleListApp/SimpleListApp/SimpleListApp/Modules/Main/NewsMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD1EFA32-0351-4E9F-9E4D-3D91E8C61227"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/Modules/Main/NewsMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "CD1EFA32-0351-4E9F-9E4D-3D91E8C61227 - a418ea28141102b2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt; in variable initialization expression of SimpleListApp.cashedNewsMiddleware : (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt;"
+                  moduleName = "SimpleListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladyslavfil/iOS_Developer/SimpleListApp/SimpleListApp/SimpleListApp/Modules/Main/NewsMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "1036">
+               </Location>
+               <Location
+                  uuid = "CD1EFA32-0351-4E9F-9E4D-3D91E8C61227 - 4ed7fb81e537b8b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; Combine.Future&lt;Swift.Array&lt;SimpleListApp.Article&gt;, Swift.Error&gt; in closure #1 (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt; in variable initialization expression of SimpleListApp.cashedNewsMiddleware : (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt;"
+                  moduleName = "SimpleListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladyslavfil/iOS_Developer/SimpleListApp/SimpleListApp/SimpleListApp/Modules/Main/NewsMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AFF413AB-2ECD-42EF-8D44-BC0341D0CE16"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleListApp/Modules/Main/NewsMiddleware.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "AFF413AB-2ECD-42EF-8D44-BC0341D0CE16 - a418ea2814110144"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt; in variable initialization expression of SimpleListApp.cashedNewsMiddleware : (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt;"
+                  moduleName = "SimpleListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladyslavfil/iOS_Developer/SimpleListApp/SimpleListApp/SimpleListApp/Modules/Main/NewsMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "1636">
+               </Location>
+               <Location
+                  uuid = "AFF413AB-2ECD-42EF-8D44-BC0341D0CE16 - ddcbd3e826977e22"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Array&lt;SimpleListApp.Article&gt;) -&gt; SimpleListApp.AppAction in closure #1 (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt; in variable initialization expression of SimpleListApp.cashedNewsMiddleware : (SimpleListApp.AppState, SimpleListApp.AppAction) -&gt; Combine.AnyPublisher&lt;SimpleListApp.AppAction, Swift.Never&gt;"
+                  moduleName = "SimpleListApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vladyslavfil/iOS_Developer/SimpleListApp/SimpleListApp/SimpleListApp/Modules/Main/NewsMiddleware.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

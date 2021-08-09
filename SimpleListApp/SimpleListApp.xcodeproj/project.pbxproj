@@ -53,6 +53,7 @@
 		82CB67B526C069E2001ACC57 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB67B426C069E2001ACC57 /* Middleware.swift */; };
 		82CB67B726C06A97001ACC57 /* NewsMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB67B626C06A97001ACC57 /* NewsMiddleware.swift */; };
 		82CB67BB26C0EF55001ACC57 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB67BA26C0EF55001ACC57 /* SafariView.swift */; };
+		82CB67BD26C141B8001ACC57 /* CashedNewsFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CB67BC26C141B8001ACC57 /* CashedNewsFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +101,7 @@
 		82CB67B426C069E2001ACC57 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		82CB67B626C06A97001ACC57 /* NewsMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsMiddleware.swift; sourceTree = "<group>"; };
 		82CB67BA26C0EF55001ACC57 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		82CB67BC26C141B8001ACC57 /* CashedNewsFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashedNewsFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,6 +325,7 @@
 			children = (
 				82CB67A426C02D41001ACC57 /* NewsFlow.swift */,
 				82CB67AE26C067B9001ACC57 /* NewsForm.swift */,
+				82CB67BC26C141B8001ACC57 /* CashedNewsFlow.swift */,
 			);
 			path = State;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				82CB676226BEB698001ACC57 /* Codable.swift in Sources */,
 				82CB67AF26C067B9001ACC57 /* NewsForm.swift in Sources */,
 				82CB676C26BEB7E3001ACC57 /* URLSession.swift in Sources */,
+				82CB67BD26C141B8001ACC57 /* CashedNewsFlow.swift in Sources */,
 				82CB678B26BF0E87001ACC57 /* Color.swift in Sources */,
 				82CB676A26BEB7B5001ACC57 /* URLRequest.swift in Sources */,
 				82CB679D26C02129001ACC57 /* DateFormatter.swift in Sources */,
@@ -587,7 +591,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ua.vfil.SimpleListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -609,7 +613,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ua.vfil.SimpleListApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

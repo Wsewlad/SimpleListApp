@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import CoreData
 
 struct Article {
     struct Id: Hashable {
@@ -52,7 +53,7 @@ extension Article {
     }
 }
 
-//MARK: - asArticle
+//MARK: - (Storable) asArticle
 extension ArticleStorable {
     var asArticle: Article {
         .init(
@@ -64,6 +65,44 @@ extension ArticleStorable {
             source: source.name,
             publishedAtDate: DateFormatter().date(from: publishedAt) ?? Date(),
             url: URL(string: url)
+        )
+    }
+}
+
+//MARK: - asCDArticle
+extension Article {
+    func saveAsCDArticle(context: NSManagedObjectContext) {
+        let newArticle = CDArticle(context: context)
+        
+        newArticle.id = id.value
+        newArticle.author = author
+        newArticle.title = title
+        newArticle.articleDescription = description
+        newArticle.source = source
+        newArticle.publishedAtDate = publishedAtDate
+        newArticle.urlToImage = urlToImage
+        newArticle.url = url
+        
+        do {
+            try context.save()
+        } catch {
+            print("Error saving managed object context: \(error)")
+        }
+    }
+}
+
+//MARK: - (CDArticle) asArticle
+extension CDArticle {
+    var asArticle: Article {
+        .init(
+            id: .init(value: id ?? ""),
+            author: author ?? "",
+            title: title ?? "",
+            description: articleDescription ?? "",
+            urlToImage: urlToImage,
+            source: source ?? "",
+            publishedAtDate: publishedAtDate ?? Date(),
+            url: url
         )
     }
 }

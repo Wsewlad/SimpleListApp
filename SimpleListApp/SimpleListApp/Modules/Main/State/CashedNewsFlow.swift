@@ -1,13 +1,13 @@
 //
-//  NewsFlow.swift
+//  CashedNewsFlow.swift
 //  SimpleListApp
 //
-//  Created by  Vladyslav Fil on 08.08.2021.
+//  Created by  Vladyslav Fil on 09.08.2021.
 //
 
 import Foundation
 
-enum NewsFlow {
+enum CashedNewsFlow {
     case none, loading
     
     init() {
@@ -16,10 +16,11 @@ enum NewsFlow {
     
     mutating func reduce(action: AppAction) {
         switch action {
-        case .loadArticles:
+            
+        case .loadCashedArticles:
             self = .loading
             
-        case .didLoadArticles, .didLoadArticlesError:
+        case .didLoadCashedArticlesError, .didLoadCashedArticles:
             self = .none
             
         default:

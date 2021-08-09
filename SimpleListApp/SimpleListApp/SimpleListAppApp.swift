@@ -10,18 +10,15 @@ import SwiftUI
 private let appStore: AppStore = .init(
     state: AppState(),
     reducer: appReducer,
-    middlewares: [newsMiddleware]
+    middlewares: [newsMiddleware, cashedNewsMiddleware]
 )
 
 @main
 struct SimpleListAppApp: App {
-    let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
             MainListView()
                 .environmentObject(appStore)
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

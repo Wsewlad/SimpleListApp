@@ -36,6 +36,11 @@ struct NewsForm {
             if items.count < self.perPage {
                 self.articlesListFull = true
             }
+            
+        case .didLoadCashedArticles(let items):
+            for item in items {
+                articles.append(item.id)
+            }
         
         case .didLoadArticlesError(let errorText):
             self.error = errorText

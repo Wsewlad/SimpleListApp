@@ -11,4 +11,7 @@ enum AppAction {
     case loadArticles(at: Int? = nil)
     case didLoadArticles(items: [Article])
     case didLoadArticlesError(text: String)
+    case didLoadCashedArticlesError(text: String)
+    case loadCashedArticles
+    case didLoadCashedArticles(items: [Article])
 }
