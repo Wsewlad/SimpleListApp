@@ -9,13 +9,6 @@ import SwiftUI
 import CoreData
 
 struct MainListView: View {
-//    @Environment(\.managedObjectContext) private var viewContext
-//
-//    @FetchRequest(
-//        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-//        animation: .default)
-    
-//    private var items: FetchedResults<Item>
     @EnvironmentObject var store: AppStore
     
     @State private var isPullToRefreshIndicatorShowing = false
@@ -26,7 +19,6 @@ struct MainListView: View {
             VStack {
                 List {
                     ForEach(store.state.newsForm.articles.elements, id: \.self) { articleId in
-                        
                         let article: Article = store.state.newsStorage.articleById[articleId] ?? .fakeItem()
     
                         ZStack {
@@ -34,27 +26,27 @@ struct MainListView: View {
                             
                             Button(action: { articleToOpen = articleId }) {
                                 ArticleRowView(article: article)
-                                    .onAppear {
-                                        if articleId == store.state.newsForm .articles.elements.last && !store.state.newsForm.articlesListFull {
-                                            store.dispatch(.loadArticles())
-                                        }
-                                    }
                             }
                             .buttonStyle(PlainButtonStyle())
                             .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
                         }
                         .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                     }
-                    
-                    if store.state.newsFlow == .loading {
-                        ZStack {
-                            Color.white.padding(-1)
-                            
+
+                    ZStack {
+                        Color.white.padding(-1)
+                        
+                        if store.state.newsFlow == .loading {
                             ProgressView()
                                 .scaleEffect(2)
                                 .padding(.vertical, 50)
                         }
-                        .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    }
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                    .onAppear {
+                        if !store.state.newsForm.articlesListFull {
+                            store.dispatch(.loadArticles())
+                        }
                     }
                 }
                 .listStyle(PlainListStyle())
